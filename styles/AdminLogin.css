@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: conic-gradient(
+      yellow 40deg,
+      blue 40deg,
+      blue 45deg,
+      transparent 45deg
+    ),
+    conic-gradient(
+      transparent 135deg,
+      blue 135deg,
+      blue 140deg,
+      transparent 140deg
+    );
+  background-size: 60px 60px;
+  background-color: white;
+}
+/* background collected from https://css-tricks.com/creative-background-patterns-using-gradients-css-shapes-and-even-emojis/ */
+h1 {
+  color: #201f0f;
+  text-align: center;
+  font-style: inherit;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 10px auto;
+  border: 1px solid rgb(83, 50, 55);
+  border-radius: 100px;
+  padding: 5px 15px;
+  max-width: 30%;
+  background: linear-gradient(90deg, #9c5151 0%, #d4b7b7 100%);
+  filter: drop-shadow(5px 5px 10px #000);
+}
+a {
+  text-decoration: none;
+  position: fixed;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+label {
+  color: #26413c;
+  font-size: 17px;
+}
+.Uname {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+.Pass {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+.log {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 17px;
+  padding-left: 7px;
+  color: rgb(92, 92, 126);
+}
+.log:hover {
+  cursor: pointer;
+}
+.login {
+  width: 382px;
+  overflow: hidden;
+  margin: auto;
+  margin: 20 0 0 450px;
+  padding: 80px;
+  background-image: linear-gradient(
+    to right top,
+    #b8c6da,
+    #99b6c4,
+    #81a5a8,
+    #71938a,
+    #697f6c
+  );
+  border-radius: 15px;
+}
+.optionsOne {
+  background: #43cbff;
+  font-size: 20px;
+  font-style: oblique;
+  line-height: 15px;
+  margin: 15px auto;
+  border: 1px solid rgb(83, 50, 55);
+  opacity: 0.8;
+  border-radius: 75px;
+  padding: 5px 15px;
+}
+.optionsOne:hover {
+  background: #ca58f3;
+  color: #fffacd;
+  cursor: pointer;
+  font-size: 22px;
+}
+/* Form collected from: https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css/ */
