@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+  background: conic-gradient(
+      yellow 40deg,
+      blue 40deg,
+      blue 45deg,
+      transparent 45deg
+    ),
+    conic-gradient(
+      transparent 135deg,
+      blue 135deg,
+      blue 140deg,
+      transparent 140deg
+    );
+  background-size: 60px 60px;
+  background-color: white;
+}
+/* background collected from https://css-tricks.com/creative-background-patterns-using-gradients-css-shapes-and-even-emojis/ */
+h1 {
+  color: #fffacd;
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 10px auto;
+  border: 1px solid rgb(83, 50, 55);
+  border-radius: 100px;
+  padding: 15px 25px;
+  max-width: 30%;
+  background-image: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+  filter: drop-shadow(5px 5px 10px #000);
+}
+a {
+  text-decoration: none;
+  position: fixed;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+input {
+  font-size: 20px;
+  font-style: oblique;
+  line-height: 15px;
+  margin: 15px auto;
+  border: 1px solid rgb(83, 50, 55);
+  border-radius: 75px;
+  padding: 5px 15px;
+}
+button {
+  background: #43cbff;
+  font-size: 20px;
+  font-style: oblique;
+  line-height: 15px;
+  margin: 15px auto;
+  border: 1px solid rgb(83, 50, 55);
+  border-radius: 75px;
+  padding: 5px 15px;
+}
+button:hover {
+  background: #ca58f3;
+  color: #fffacd;
+  cursor: pointer;
+  font-size: 22px;
+}
+.optionsOne {
+  background: #43cbff;
+  font-size: 20px;
+  font-style: oblique;
+  line-height: 15px;
+  margin: 15px auto;
+  border: 1px solid rgb(83, 50, 55);
+  opacity: 0.8;
+  border-radius: 75px;
+  padding: 5px 15px;
+}
+.optionsOne:hover {
+  background: #ca58f3;
+  color: #fffacd;
+  cursor: pointer;
+  font-size: 22px;
+}
