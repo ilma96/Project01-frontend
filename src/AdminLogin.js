@@ -1,4 +1,4 @@
-let updateContent = document.getElementById("updateContent");
+let updateContent = document.getElementById("content");
 let loginButton = document.getElementById("log");
 let usernameInput = document.getElementById("Uname");
 let passwordInput = document.getElementById("Pass");
@@ -20,14 +20,13 @@ async function postCredentials() {
   });
 }
 async function checkCredentials() {
-  let username = usernameInput.value;
-  let password = passwordInput.value;
+  updateContent.innerHTML = "";
   let response = await fetch("http://localhost:9000/administrator_options");
   response = await response.json();
-  if (response.username == username && response.password == password) {
+  let username = usernameInput.value;
+  let password = passwordInput.value;
+  if (username == response[0]?.username && password == response[0]?.password) {
     window.location = "MenuUpdate.html";
-  } else {
-    updateContent.innerHTML = "Wrong Username or Password! Try Again.";
-    updateContent.innerHTML = "";
   }
+  updateContent.innerHTML = "Wrong Username or Password! Try Again.";
 }

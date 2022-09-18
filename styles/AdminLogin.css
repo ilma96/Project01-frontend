@@ -31,13 +31,6 @@ h1 {
   background: linear-gradient(90deg, #9c5151 0%, #d4b7b7 100%);
   filter: drop-shadow(5px 5px 10px #000);
 }
-a {
-  text-decoration: none;
-  position: fixed;
-  bottom: 8px;
-  left: 16px;
-  font-size: 18px;
-}
 
 label {
   color: #26413c;
@@ -84,21 +77,5 @@ label {
   );
   border-radius: 15px;
 }
-.optionsOne {
-  background: #43cbff;
-  font-size: 20px;
-  font-style: oblique;
-  line-height: 15px;
-  margin: 15px auto;
-  border: 1px solid rgb(83, 50, 55);
-  opacity: 0.8;
-  border-radius: 75px;
-  padding: 5px 15px;
-}
-.optionsOne:hover {
-  background: #ca58f3;
-  color: #fffacd;
-  cursor: pointer;
-  font-size: 22px;
-}
+
 /* Form collected from: https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css/ */
