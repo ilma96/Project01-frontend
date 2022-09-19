@@ -30,10 +30,6 @@ async function checkCredentials() {
   let password = passwordInput.value;
   if (username == response[0]?.username && password == response[0]?.password) {
     window.location = "MenuUpdate.html";
-  } else if (
-    username != response[0]?.username &&
-    password != response[0]?.password
-  ) {
-    updateContent.innerHTML = "Wrong Username or Password! Try Again.";
   }
+  updateContent.innerHTML = "Wrong Username or Password! Try Again.";
 }
