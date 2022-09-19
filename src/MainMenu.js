@@ -2,7 +2,7 @@ let menuContent = document.getElementById("content");
 let viewMenuClick = document.getElementById("menu");
 viewMenuClick.addEventListener("click", displayMenu);
 async function displayMenu() {
-  let response = await fetch("http://localhost:9000/view_menu/");
+  let response = await fetch("http://20.171.104.56:9000/view_menu/");
   response = await response.json();
   loadMenu(response);
 }

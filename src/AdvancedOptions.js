@@ -13,7 +13,7 @@ async function addFood() {
   let inputFood = {
     itemID: idInput.value,
   };
-  let response = await fetch("http://localhost:9000/advanced_options", {
+  let response = await fetch("http://20.171.104.56:9000/advanced_options", {
     method: "POST",
     mode: "cors",
     headers: {
@@ -26,7 +26,7 @@ async function removeFood() {
   let inputFood = {
     itemID: idRemove.value,
   };
-  let response = await fetch("http://localhost:9000/advanced_options", {
+  let response = await fetch("http://20.171.104.56:9000/advanced_options", {
     method: "DELETE",
     mode: "cors",
     headers: {
@@ -37,7 +37,7 @@ async function removeFood() {
 }
 async function viewCart() {
   let response = await fetch(
-    "http://localhost:9000/advanced_options/view_my_cart/"
+    "http://20.171.104.56:9000/advanced_options/view_my_cart/"
   );
   response = await response.json();
   loadCart(response);
@@ -69,7 +69,7 @@ async function loadCart(response) {
 }
 async function viewTotalPrice() {
   let response = await fetch(
-    "http://localhost:9000/advanced_options/view_total_price/"
+    "http://20.171.104.56:9000/advanced_options/view_total_price/"
   );
   response = await response.json();
   loadTotalPrice(response);
